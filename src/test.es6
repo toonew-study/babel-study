@@ -3,7 +3,7 @@
  */
 require("babel-polyfill");
 
-var fs = require('fs');
+import fs from 'fs';
 
 var readFile = function (fileName) {
   return new Promise(function (resolve, reject) {
@@ -25,4 +25,3 @@ console.log('test');
 console.log('test2');
 
 var result = asyncReadFile();
-
