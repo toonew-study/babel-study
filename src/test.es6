@@ -1,8 +1,7 @@
 /**
  * Created by Rain on 2015/12/18.
  */
-require("babel-polyfill");
-
+import "babel-polyfill";
 import fs from 'fs';
 
 var readFile = function (fileName) {

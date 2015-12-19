@@ -2,21 +2,21 @@
 
 ## Babel 基本知识
 
-Babel5包囊括了整个编译器、所有的转换器以及一个CLI工具
+Babel5包含整个编译器、所有的转换器以及一个CLI工具
+
 Babel6分成两个单独的包： babel-cli和babel-core。
 
-## 安装全局
+## 安装基本依赖
 >$ npm install --global babel-cli  
 or  
 $ npm install --save-dev babel-core  
 如果你想要在命令行使用Babel，你可以安装babel-cli，
 如果你需要在一个Node项目中使用Babel，你可以使用babel-core。
 
-
 ## 创建配置文件
 >Create .babelrc configuration file
 
-##  插件和预设值添加
+## 插件和预设值添加
 >$npm install --save-dev babel-plugin-transform-es2015-arrow-functions  
 
 ## 部分插件安装或者预编译 及命令解释
@@ -31,7 +31,7 @@ babel 可以将ES6文件转换输出到另一个文件：
  babel es6.js --out-file es5.js
  
  
-## bug记录
+## es7(async 异步函数等)需要倒入
 ReferenceError: regeneratorRuntime is not defined
 >$ npm i babel-polyfill --save
  在其运行错误代码首行加上以下代码来载入babel-polyfill：
