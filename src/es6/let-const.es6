@@ -36,11 +36,12 @@
 //a[6](); // 6
 
 //5. 变量提升
-//console.log(foo);
-//let foo = 2;
+//console.log(foo); // 输出undefined
+//console.log(bar); // 报错ReferenceError
 //
-//typeof x; // ReferenceError
-//let x;
+//var foo = 2;
+//let bar = 2;
+//bable  暂时两个都是 undefined
 
 
 //6. 暂时性死区
@@ -49,6 +50,18 @@
 //if (true) {
 //  tmp = 'abc'; // ReferenceError
 //  let tmp;
+//}
+
+//if (true) {
+//  // TDZ开始
+//  tmp = 'abc'; // ReferenceError
+//  console.log(tmp); // ReferenceError
+//
+//  let tmp; // TDZ结束
+//  console.log(tmp); // undefined
+//
+//  tmp = 123;
+//  console.log(tmp); // 123
 //}
 
 //7. let不会被提升声明
@@ -62,3 +75,9 @@
 //}
 //
 //f() // undefined
+
+
+//const 命令
+const PI = 3.1415;
+console.log(PI);
+//PI = 3;   // TypeError: "PI" is read-only

@@ -9,3 +9,10 @@ out
 gen
 
 node_modules
+
+dist
+
+src/*.js
+src/*.map
+src/*/*.js
+src/*/*.map
